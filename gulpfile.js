@@ -7,6 +7,7 @@ const terser = require("gulp-terser");
 const imagemin = require("gulp-imagemin");
 const concat = require("gulp-concat");
 const browserSync = require("browser-sync").create();
+
 const paths = {
   scss: {
     src: "./scss/**/*.scss",
@@ -25,6 +26,7 @@ const paths = {
     dest: "./dist/img",
   },
 };
+
 function styleTask() {
   return src(paths.scss.src, { sourcemaps: true })
     .pipe(concat("style.css"))
@@ -34,6 +36,7 @@ function styleTask() {
     .pipe(dest(paths.scss.dest), { sourcemaps: "." })
     .pipe(browserSync.stream());
 }
+
 function jsTask() {
   return src(paths.js.src, { sourcemaps: true })
     .pipe(concat("all.js"))
@@ -41,12 +44,15 @@ function jsTask() {
     .pipe(dest(paths.js.dest), { sourcemaps: "." })
     .pipe(browserSync.stream());
 }
+
 function htmlTask() {
   return src(paths.html.src).pipe(dest(paths.html.dest));
 }
+
 function imgTask() {
   return src(paths.img.src).pipe(imagemin()).pipe(dest(paths.img.dest));
 }
+
 function watchTask() {
   browserSync.init({
     server: {
@@ -59,4 +65,5 @@ function watchTask() {
   watch(paths.scss.src, styleTask);
   watch(paths.js.src, jsTask);
 }
+
 exports.default = series(styleTask, jsTask, imgTask, htmlTask, watchTask);
