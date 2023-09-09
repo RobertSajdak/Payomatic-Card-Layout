@@ -230,11 +230,13 @@
 .hidden {
   opacity: 0;
   transition: 0.25s ease-in-out;
+  visibility: hidden;
 }
 
 .visible {
   opacity: 1;
   transition: 0.25s ease-in-out;
+  visibility: visible;
 }
 
 .none {
@@ -245,6 +247,24 @@
 
 .block {
   &.btn-menu {
+    display: inline-block;
+
+    @include medium-up {
+      display: none;
+    }
+  }
+}
+
+.u-img {
+  &--desktop {
+    display: none;
+
+    @include medium-up {
+      display: inline-block;
+    }
+  }
+
+  &--mobile {
     display: inline-block;
 
     @include medium-up {

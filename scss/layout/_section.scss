@@ -1,0 +1,53 @@
+.showcase {
+  &__content {
+    & h1 {
+      margin-bottom: 14px;
+
+      @include medium-up {
+        margin-bottom: 20px;
+      }
+    }
+
+    & p {
+      font-size: $font-size-5;
+      margin-bottom: 29px;
+
+      @include medium-up {
+        margin-bottom: 49px;
+
+        @include paragraph;
+      }
+    }
+
+    &-buttons {
+      & .btn {
+        font-size: 13px;
+
+        @include medium-up {
+          font-size: $font-size-5;
+        }
+
+        &:first-child {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  &__img {
+    justify-self: center;
+    margin-top: 14px;
+
+    @include medium-up {
+      margin-top: 21px;
+    }
+  }
+
+  & .grid {
+    grid-template-columns: 1fr;
+
+    @include medium-up {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
