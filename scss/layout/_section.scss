@@ -92,10 +92,10 @@
 
 .shopping {
   background-color: $white;
-  padding: 43px 0;
+  padding-top: 43px;
 
   @include medium-up {
-    padding: 71px 0;
+    padding-top: 71px;
   }
 
   & .grid {
@@ -117,10 +117,10 @@
 
     &:last-child {
       border-bottom: 1px solid #c4d1e6;
-      padding-bottom: 30px;
+      padding-bottom: 73px;
 
       @include medium-up {
-        padding-bottom: 87px;
+        padding-bottom: 158px;
       }
     }
   }
