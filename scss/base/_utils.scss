@@ -256,8 +256,11 @@
 }
 
 .u-img {
+  justify-self: center;
+
   &--desktop {
     display: none;
+    @extend .u-img;
 
     @include medium-up {
       display: inline-block;
@@ -266,6 +269,7 @@
 
   &--mobile {
     display: inline-block;
+    @extend .u-img;
 
     @include medium-up {
       display: none;
