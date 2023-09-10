@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payomatic</title>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
@@ -116,7 +117,7 @@
       <!-- SECTION SHOWCASE-->
       <section class="showcase">
         <div class="container grid">
-          <div class="showcase__content">
+          <div class="showcase__content" data-aos="fade-right">
             <span class="label">Idź z duchem czasu i poczuj wolność!..</span>
             <h1 class="heading heading--1">
               Spokój zakupów. Harmonia pieniędzy.
@@ -134,6 +135,7 @@
             src="img/showcase-desktop.png"
             alt="Zdjęcie sekcji głównej dla widoku desktop."
             class="showcase__img u-img--desktop"
+            data-aos="fade-left"
           />
           <img
             src="img/showcase-mobile.png"
@@ -155,6 +157,7 @@
               <img
                 src="img/function-1.png"
                 alt="Grafika - żółte koło i fioletowy prostokąt obok, z prawej strony."
+                data-aos="flip-up"
               />
               <h3 class="heading heading--3">Konto wielowalutowe</h3>
               <p>
@@ -167,6 +170,7 @@
               <img
                 src="img/function-2.png"
                 alt="Grafika - zielone koło na środku szarego prostokąta."
+                data-aos="flip-up"
               />
               <h3 class="heading heading--3">Karta Payomatic</h3>
               <p>
@@ -179,6 +183,7 @@
               <img
                 src="img/function-3.png"
                 alt="Grafika - fioletowe koło i fioletowy, obrócony o 90 stopni kwadrat."
+                data-aos="flip-up"
               />
               <h3 class="heading heading--3">Transfer środków</h3>
               <p>
@@ -191,6 +196,7 @@
               <img
                 src="img/function-4.png"
                 alt="Grafika - niebieski prostokąt na niebieskim kole."
+                data-aos="flip-down"
               />
               <h3 class="heading heading--3">Instant cashback</h3>
               <p>
@@ -203,6 +209,7 @@
               <img
                 src="img/function-5.png"
                 alt="Grafika - różowy, obrócony o 90 stopni kwadrat."
+                data-aos="flip-down"
               />
               <h3 class="heading heading--3">G-Pay</h3>
               <p>
@@ -215,6 +222,7 @@
               <img
                 src="img/function-6.png"
                 alt="Grafika - żółte koło i żółty, obrócony o 90 stopni kwadrat."
+                data-aos="flip-down"
               />
               <h3 class="heading heading--3">Apple Pay</h3>
               <p>
@@ -245,6 +253,7 @@
               src="img/payment-desktop.png"
               alt="Elementy z opisem płatności."
               class="u-img--desktop"
+              data-aos="fade-left"
             />
             <img
               src="img/payment-mobile.png"
@@ -257,6 +266,7 @@
               src="img/card-desktop.png"
               alt="Karty zakupowe Paymatic."
               class="u-img--desktop"
+              data-aos="fade-right"
             />
             <div class="shopping__content">
               <span class="label"
@@ -300,6 +310,17 @@
         </div>
       </div>
     </footer>
+
+    <!-- JS SCRIPTS for AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 200,
+        duration: 1200,
+        once: true,
+        disable: "mobile",
+      });
+    </script>
     <script src="./js/all.js"></script>
   </body>
 </html>
