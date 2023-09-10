@@ -34,11 +34,12 @@ To run this project, start it in root directory using:
 
 Example screenshots:
 
-![Example screenshot](./img/screenshots/...)
-![Example screenshot](./img/screenshots/...)
-![Example screenshot](./img/screenshots/...)
-![Example screenshot](./img/screenshots/...)
-![Example screenshot](./img/screenshots/...)
+![Example screenshot](./img/screenshots/aplication's-menu-screen.png)
+![Example screenshot](./img/screenshots/payomatic-functions-screen.png)
+![Example screenshot](./img/screenshots/cards-screen.png)
+![Example screenshot](./img/screenshots/footer-screen.png)
+![Example screenshot](./img/screenshots/hamburger-mobile-menu-screen.png)
+![Example screenshot](./img/screenshots/drop-down-mobile-menu-screen.png)
 
 ## Features
 
